@@ -13,7 +13,7 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-[Live Demo](http://localhost:3000) • [API Docs](http://localhost:3001/api-docs) • [How It Works](http://localhost:3000/how-it-works)
+[Live Demo](https://verity-nlp.vercel.app) • [API Docs](https://verity-wfk0.onrender.com/api-docs) • [How It Works](https://verity-nlp.vercel.app/how-it-works)
 
 
 </div>
