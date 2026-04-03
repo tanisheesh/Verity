@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import '@fontsource/bebas-neue';
+@import '@fontsource/dm-sans';
+
+:root {
+  --bg-primary: #080808;
+  --bg-secondary: #0f0f0f;
+  --bg-card: #141414;
+  --bg-card-hover: #1a1a1a;
+  --border: #222222;
+  --border-bright: #333333;
+  --accent: #00ff88;
+  --accent-dim: #00ff8820;
+  --accent-glow: #00ff8840;
+  --red: #ff3b3b;
+  --amber: #ffaa00;
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --text-muted: #444444;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMjU2IDI1NicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZmlsdGVyIGlkPSdub2lzZSc+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsTm9pc2UnIGJhc2VGcmVxdWVuY3k9JzAuOScgbnVtT2N0YXZlcz0nNCcgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNub2lzZSknIG9wYWNpdHk9JzEnLz48L3N2Zz4=");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+  50% { 
+    opacity: 0.7; 
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
