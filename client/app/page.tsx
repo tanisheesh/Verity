@@ -205,7 +205,7 @@ export default function Home() {
         {/* Links Section */}
         <div className="flex items-center justify-center gap-6 mt-12">
           <a
-            href="http://localhost:3001/api-docs"
+            href="https://verity-wfk0.onrender.com/api-docs"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[14px] transition-colors hover:text-[var(--text-primary)]"
