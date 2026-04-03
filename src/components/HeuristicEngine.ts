@@ -238,11 +238,7 @@ export class HeuristicEngine {
     // Check thresholds: flag if 30+ words AND TTR < 0.6
     const isLowDiversity = totalWords >= 30 && typeTokenRatio < 0.6;
 
-    // DEBUG - REMOVE AFTER
-    console.log('TTR - total words after stop filter:', totalWords);
-    console.log('TTR - unique words:', uniqueWords);
-    console.log('TTR - ratio:', typeTokenRatio);
-    console.log('TTR - threshold check (>=30 words AND <0.6):', totalWords >= 30, typeTokenRatio < 0.6);
+    // Debug logs removed for production
 
     return {
       totalWords,
