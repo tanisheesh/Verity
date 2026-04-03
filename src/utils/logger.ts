@@ -32,31 +32,34 @@ class Logger {
 
   info(message: string, data?: any): void {
     if (this.shouldLog('info')) {
-      this.formatLog('info', message, data);
-      // In production, send to logging service
+      const log = this.formatLog('info', message, data);
+      console.log(JSON.stringify(log));
     }
   }
 
   warn(message: string, data?: any): void {
     if (this.shouldLog('warn')) {
-      this.formatLog('warn', message, data);
+      const log = this.formatLog('warn', message, data);
+      console.warn(JSON.stringify(log));
     }
   }
 
   error(message: string, error?: any): void {
     if (this.shouldLog('error')) {
-      this.formatLog('error', message, {
+      const log = this.formatLog('error', message, {
         error: error instanceof Error ? {
           message: error.message,
           stack: error.stack
         } : error
       });
+      console.error(JSON.stringify(log));
     }
   }
 
   debug(message: string, data?: any): void {
     if (this.shouldLog('debug')) {
-      this.formatLog('debug', message, data);
+      const log = this.formatLog('debug', message, data);
+      console.debug(JSON.stringify(log));
     }
   }
 }

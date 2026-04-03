@@ -19,6 +19,10 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
+        url: 'https://verity-wfk0.onrender.com',
+        description: 'Production server',
+      },
+      {
         url: 'http://localhost:3001',
         description: 'Development server',
       },
