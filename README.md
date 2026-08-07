@@ -1,119 +1,93 @@
-<div align="center">
+<p align="center">
+  <svg width="64" height="64" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" rx="6" fill="#080808"/>
+    <path d="M8 8L16 24L24 8" stroke="#00FF88" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</p>
 
-# 🔍 VERITY
+<h1 align="center">VERITY</h1>
 
-### *Truth Lives in Language.*
+<p align="center">
+  <strong>Forensic linguistic analysis that scores any text for deception patterns — 9 rule-based NLP layers, no machine learning, results in under 500 ms.</strong>
+</p>
 
-**Forensic linguistic analysis powered by rule-based NLP**
+<p align="center">
+  <a href="https://verity-nlp.vercel.app">
+    <img src="https://img.shields.io/badge/live_demo-00FF88-00FF88?style=flat-square" alt="Live Demo">
+  </a>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/license-GPL--3.0-00FF88?style=flat-square" alt="License">
+</p>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-
-[Live Demo](https://verity-nlp.vercel.app) • [API Docs](https://verity-wfk0.onrender.com/api-docs) • [How It Works](https://verity-nlp.vercel.app/how-it-works)
-
-
-</div>
-
-## 💡 What Is This?
-
-VERITY analyzes **how** people write to detect deception patterns. Not what they say — but how they say it.
-
-- 🎯 **Single Message**: Get a deception score (0-100) with detailed indicators
-- 💬 **Conversations**: Track story changes and contradictions across messages
-- ⚡ **Fast**: Results in <500ms
-- 🔬 **Explainable**: Every decision is documented and traceable
-
-No black boxes. No machine learning. Just forensic linguistics.
-
- 
-
-## 🎯 What It Does
-
-VERITY analyzes how people write and speak to identify linguistic patterns associated with deception. It doesn't verify facts — it analyzes **how** something is said, not **what** is said.
-
-**Single Message Analysis**: Paste a statement, get a deception score (0-100) with detailed indicators.
-
-**Conversation Analysis**: Analyze multi-message exchanges to detect story changes, timeline contradictions, and cross-message inconsistencies.
-
- 
-
-## 🧠 The 9 Analysis Layers
-
-### 1. **Tense Consistency** (25% weight)
-Tracks verb tenses across sentences. Unexplained shifts from past to present mid-narrative indicate construction rather than recall.
-
-### 2. **Agent Deletion** (20% weight)
-Detects excessive passive voice. When over 40% of sentences avoid naming the actor, the speaker is likely dodging responsibility.
-
-### 3. **Pronoun Consistency** (10% weight)
-Monitors first-person pronoun usage. Dropping "I" or shifting to "we" signals psychological distancing from events.
-
-### 4. **Lexical Diversity** (12% weight)
-Measures vocabulary richness using Type-Token Ratio. Fabricated stories reuse limited vocabulary (TTR < 0.6).
-
-### 5. **Negation Clustering** (15% weight)
-Identifies defensive negation patterns. Multiple negations per sentence reveal defensive thinking. Preemptive denials are particularly strong signals.
-
-### 6. **Narrative Structure** (20% weight)
-Checks for prologue (context before), core event, and epilogue (aftermath). Missing components suggest fabrication with no real memory.
-
-### 7. **Information Density** (15% weight)
-Analyzes word distribution across narrative sections. Liars over-detail irrelevant parts while being vague about central events.
-
-### 8. **Cognitive Load Language** (12% weight)
-Catalogs hedge words ("honestly", "to be frank") and memory qualifiers. High density indicates cognitive strain from fabrication.
-
-### 9. **Contradiction Detection** (15% weight)
-Extracts subject-verb pairs and compares them across the text. Flags contradictory claims about the same subject.
-
- 
-
-## 📊 How Scoring Works
-
-```
-Score = Σ (Weight × Severity × 100)
-```
-
-**Severity Levels**:
-- Low = 0.33
-- Medium = 0.66  
-- High = 1.0
-
-**Score Ranges**:
-- **0-33**: Likely Truthful — Minimal deception indicators detected
-- **34-59**: Inconsistent — Contradictions worth investigating
-- **60-79**: Likely Deceptive — Multiple deception signals present
-- **80-100**: Deceptive — Strong evidence of fabrication
-
-Each indicator contributes to the final score based on its weight and severity. The system provides a confidence interval (±) to indicate scoring uncertainty.
-
- 
-## 🚀 Features
-
-✅ **Real-time Analysis** — Results in under 500ms  
-✅ **Explainable AI** — Every decision is traceable and documented  
-✅ **Conversation Mode** — Detect story changes across multiple messages  
-✅ **Developer Mode** — Toggle detailed technical breakdowns  
-✅ **API Documentation** — Full Swagger UI at `/api-docs`  
-✅ **100% Rule-Based** — No machine learning, no training data required  
-
- 
-
-## ⚠️ Limitations
-
-**VERITY Cannot**:
-- Verify factual accuracy — It analyzes linguistic patterns, not truth
-- Detect all deception — Practiced liars may score low
-- Replace human judgment — Context and culture matter
-
-**Best Used For**:
-- Initial screening of statements
-- Identifying areas requiring deeper investigation
-- Educational purposes and linguistic research
 ---
 
-**Remember**: VERITY is a tool, not a verdict. Always combine automated analysis with human expertise and contextual understanding.
+<p align="center">
+  <img src="docs/assets/demo.gif" alt="VERITY demo" width="700">
+</p>
+
+---
+
+## What is VERITY?
+
+VERITY analyzes **how** people write to surface deception patterns — not what they claim, but how they say it. It applies nine forensic-linguistics heuristics (tense consistency, agent deletion, pronoun distancing, negation clustering, narrative structure, and more) to produce an explainable 0–100 deception score with a confidence interval. Unlike black-box ML classifiers, every indicator VERITY flags is traceable to a specific sentence and a documented rule. The tool works on single statements and on multi-message conversations, detecting story drift and timeline contradictions across messages.
+
+> **Live demo →** [verity-nlp.vercel.app](https://verity-nlp.vercel.app)  
+> **API docs →** [verity-wfk0.onrender.com/api-docs](https://verity-wfk0.onrender.com/api-docs)
+
+---
+
+## What you get
+
+- **9-layer NLP pipeline** — tense shifts, passive-voice overuse, pronoun distancing, lexical poverty, negation clusters, narrative gaps, information-density imbalance, cognitive-load language, and contradiction detection all scored and weighted into one number
+- **Conversation mode** — paste a multi-message exchange; VERITY scores each message individually, then applies recency-weighted aggregation and cross-message pattern detection (story inconsistencies, timeline mismatches, detail contradictions)
+- **Fully explainable output** — every indicator lists its weight, severity, contributing sentence, and plain-English description; no verdict without evidence
+- **Zero ML, zero data retention** — purely deterministic rule-based NLP using compromise and natural; stateless API, nothing stored server-side
+
+---
+
+## Stack
+
+| Layer | Tech |
+|---|---|
+| Frontend | Next.js 16 (App Router) · React 19 · Tailwind CSS 4 · Framer Motion |
+| Backend | Node.js · Express 5 · TypeScript |
+| NLP | compromise 14 · natural 8 |
+| API Docs | Swagger UI (swagger-jsdoc + swagger-ui-express) |
+| Security | helmet · express-rate-limit · CORS |
+| Hosting | Vercel (frontend) · Render (backend) |
+
+---
+
+## Engineering Decisions
+
+**Why rule-based NLP over an LLM?**
+Every score is fully auditable — trace any flag back to a specific sentence and a documented heuristic. An LLM would make the system opaque and introduce nondeterminism, which defeats the "explainable" promise.
+
+**Why compromise over spaCy or a heavier NLP stack?**
+compromise runs natively in Node.js with zero Python dependency. It's fast enough for <500 ms targets and covers the POS tagging and entity extraction this system needs without requiring a model download or a separate service.
+
+**Why stateless (no database)?**
+The analysis task is purely computational — text in, scores out. Storing nothing simplifies deployment, eliminates a whole attack surface, and means the backend scales horizontally with no coordination.
+
+**What would you do differently in v2?**
+Add confidence calibration against a labelled ground-truth corpus so the weight constants are empirically derived rather than manually tuned. The current weights are reasonable starting points, but they're not validated against real deception data.
+
+---
+
+## Docs
+
+| Document | Description |
+|---|---|
+| [PRD](docs/PRD.md) | Product requirements — goals, user stories, non-goals |
+| [Architecture](docs/ARCHITECTURE.md) | System design, data flow, component breakdown |
+| [Decisions](docs/DECISIONS.md) | Every major technical decision and why |
+| [Setup](docs/SETUP.md) | Local dev setup, env vars, deployment |
+
+---
+
+## Author
+
+**Tanish Poddar** — [tanisheesh.in](https://tanisheesh.in) · [LinkedIn](https://linkedin.com/in/tanisheesh) · [GitHub](https://github.com/tanisheesh)
