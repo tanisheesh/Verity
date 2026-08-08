@@ -164,4 +164,4 @@ Part of the Lie Detector NLP system.
 
 ---
 
-Made with ❤️ by [Tanish Poddar](https://tanisheesh.is-a.dev/)
+Made with ❤️ by [Tanish Poddar](https://tanisheesh.in/)

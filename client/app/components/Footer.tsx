@@ -17,7 +17,7 @@ export default function Footer() {
         Copyright © {currentYear} | Made with{' '}
         <span style={{ color: 'var(--red)' }}>❤️</span> by{' '}
         <a
-          href="https://tanisheesh.is-a.dev/"
+          href="https://tanisheesh.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-colors hover:text-[var(--text-primary)]"

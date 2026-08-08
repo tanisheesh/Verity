@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://verity-nlp.vercel.app">
+  <a href="https://verity.tanisheesh.in">
     <img src="https://img.shields.io/badge/live_demo-00FF88-00FF88?style=flat-square" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
@@ -34,7 +34,7 @@
 
 VERITY analyzes **how** people write to surface deception patterns — not what they claim, but how they say it. It applies nine forensic-linguistics heuristics (tense consistency, agent deletion, pronoun distancing, negation clustering, narrative structure, and more) to produce an explainable 0–100 deception score with a confidence interval. Unlike black-box ML classifiers, every indicator VERITY flags is traceable to a specific sentence and a documented rule. The tool works on single statements and on multi-message conversations, detecting story drift and timeline contradictions across messages.
 
-> **Live demo →** [verity-nlp.vercel.app](https://verity-nlp.vercel.app)  
+> **Live demo →** [verity.tanisheesh.in](https://verity.tanisheesh.in)  
 > **API docs →** [verity-wfk0.onrender.com/api-docs](https://verity-wfk0.onrender.com/api-docs)
 
 ---

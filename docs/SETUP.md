@@ -1,6 +1,6 @@
 # Local Setup — VERITY
 
-> **Just want to try it?** Use the live demo at [verity-nlp.vercel.app](https://verity-nlp.vercel.app) — no setup needed.  
+> **Just want to try it?** Use the live demo at [verity.tanisheesh.in](https://verity.tanisheesh.in) — no setup needed.  
 > This guide is for running VERITY locally or self-hosting it.
 
 ---

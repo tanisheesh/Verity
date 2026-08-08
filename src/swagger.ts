@@ -10,7 +10,7 @@ const options: swaggerJsdoc.Options = {
       description: 'Rule-based NLP system for detecting deception indicators in text using 9 analysis layers',
       contact: {
         name: 'Tanish Poddar',
-        url: 'https://tanisheesh.is-a.dev/',
+        url: 'https://tanisheesh.in/',
       },
       license: {
         name: 'ISC',
